@@ -42,7 +42,7 @@
 
 6. Result Observability go to menu APM Services or hit url ```http://localhost:5601/app/apm/services```
     - Services
-        ![Alt text](images/Services.jpeg "Services")
+        ![Alt text](images/services.jpeg "Services")
 
     - Profile Service golang-elk 
         ![Alt text](images/profile-service-1.jpeg "profile-service-1")
