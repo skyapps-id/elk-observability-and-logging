@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  db:
+    platform: linux/x86_64
+    image: mysql:8.0
+    container_name: mysql_container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'rootTest'
+      MYSQL_DATABASE: 'db'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'test'
+      TZ: 'Asia/Jakarta'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+volumes:
+  mysql-data:
